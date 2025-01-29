@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Visualization Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Weather Data Visualization</h1>
+    <div id="weather-table"></div>
+    
+    <div id="container">
+      <button onclick="displayBarChart()">Display Bar Chart</button>
+      <button onclick="displayHeatmap()">Display Heatmap</button>
+      <button onclick="displayScatterPlot()">Display Scatter Plot</button>
+      <button onclick="displayPieChart()">Display Pie Chart</button>
+      <button onclick="displayLineChart()">Display Line Chart</button>
+      <button onclick="displayHistogram()">Display Histogram</button>
+      
+      <div id="chart-container"></div>
+      <div id="tooltip" class="tooltip"></div>
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

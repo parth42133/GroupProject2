@@ -1,0 +1,4 @@
+Parth Patel:            Bar chart and Histogram
+Palav Desai:            Heatmap and fetch the data from the API
+Kashish Benani:         Scatter Plot and Pie chart
+Rutvikkumar Gopani:     Line Chart

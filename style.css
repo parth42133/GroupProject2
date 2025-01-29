@@ -1,0 +1,166 @@
+body {
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+  margin: 0;
+  background-image: linear-gradient(to right, rgba(137, 136, 221, 0.4), rgb(179, 204, 241));
+}
+#chart-title {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  fill: black;
+}
+#chart-text {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  fill: black;
+}
+button {
+  color: white;
+  background-color: #00246b;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  background-color: #5788eb;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#weather-table {
+  margin: 100px;
+}
+
+#chart-container {
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+button:hover {
+  background-color: #011641;
+}
+
+#chart-container .line {
+  padding: 30px;
+}
+#chart-container .bar {
+  padding: 30px;
+}
+#chart-container .scatter-plot {
+  padding: 30px;
+}
+#chart-container .pie {
+  padding: 30px;
+}
+#chart-container .histogram {
+  padding: 30px;
+}
+#chart-container .heatmap {
+  padding: 30px;
+}
+
+.legend {
+  text-anchor: start;
+  font-size: 14px;
+}
+svg {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.line-circle {
+  stroke-width: 2;
+  fill: #e74c3c;
+  stroke: #ffffff;
+}
+
+.bar:hover {
+  fill: #2c3e50;
+}
+
+.tooltip {
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  display: none;
+  transform: translateX(-50%);
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  text-align: center;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease;
+  pointer-events: none;
+}
+h1 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  margin-top: 50px;
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scatter-plot circle {
+  fill: #e74c3c;
+  stroke-width: 2;
+  stroke: #00246b;
+}
+.histogram rect {
+  fill: #00246b;
+  stroke-width: 1;
+  stroke: aliceblue;
+}
+
+.heatmap rect {
+  stroke-width: 1;
+  stroke: #ffffff;
+}
